@@ -1,0 +1,114 @@
+@charset "UTF-8";
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.header {
+  background-color: #2a2626;
+}
+.header__search, .header__sort, .header__info, .header__insert, .header__remove {
+  display: inline-block;
+  padding: 20px;
+}
+.header__search-submit, .header__search-text, .header__search-select, .header__sort-submit, .header__sort-text, .header__sort-select, .header__info-submit, .header__info-text, .header__info-select, .header__insert-submit, .header__insert-text, .header__insert-select, .header__remove-submit, .header__remove-text, .header__remove-select {
+  padding: 5px;
+  border-radius: 30px;
+  border: 1px solid white;
+}
+.header .submit {
+  background-color: #2a2626;
+  color: white;
+  min-width: 80px;
+}
+.header .submit:hover {
+  color: #2a2626;
+  background-color: white;
+}
+.header__info {
+  color: white;
+}
+.header__link-back {
+  color: white;
+  text-decoration: none;
+}
+.header__link-back:hover {
+  text-decoration: underline;
+}
+
+.main {
+  min-height: 100%;
+  background-color: #d8d4d4;
+  text-align: center;
+  /* стили для формы входа администратора*/
+  /* ************************************** */
+}
+.main__container {
+  display: inline-block;
+}
+.main__table {
+  border-collapse: collapse;
+}
+.main__thead {
+  background-color: #2a2626;
+  color: white;
+}
+.main__tbody {
+  background-color: white;
+}
+.main th, .main td {
+  padding: 10px;
+  min-width: 200px;
+}
+.main__login, .main__form-upd {
+  display: inline-block;
+  background-color: #2a2626;
+  border-radius: 30px;
+  padding: 20px;
+  color: white;
+  margin-top: 10%;
+}
+.main__login-text, .main__form-upd-text {
+  display: block;
+  padding: 5px;
+  border-radius: 30px;
+  border: 1px solid white;
+  margin: 5px;
+}
+.main__login .select-author, .main__form-upd .select-author {
+  min-width: 180px;
+}
+.main__login .message, .main__form-upd .message {
+  color: red;
+}
+.main__link-back {
+  background-color: #2a2626;
+  margin-bottom: 10px;
+}
+.main__link-back .link {
+  color: white;
+  text-decoration: none;
+}
+.main__link-back .link:hover {
+  text-decoration: underline;
+}
+.main .submit {
+  background-color: #2a2626;
+  color: white;
+  min-width: 80px;
+  padding: 5px;
+  border-radius: 30px;
+  border: 1px solid white;
+  margin: 5px;
+}
+.main .submit:hover {
+  color: #2a2626;
+  background-color: white;
+}
+.main .submit:hover {
+  border: 1px solid #2a2626;
+}

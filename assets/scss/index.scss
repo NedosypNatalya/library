@@ -1,0 +1,114 @@
+$dark: rgb(42, 38, 38);
+$light: white;
+$grey: rgb(216, 212, 212);
+
+@mixin sub($b-color, $color) {
+    background-color: $b-color;
+    color: $color;
+    min-width: 80px;
+    &:hover{
+        color: $b-color;
+        background-color: $color;
+    }
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+html,body{
+    height: 100%;
+}
+.header{
+    background-color: $dark;
+    &__search, &__sort, &__info, &__insert, &__remove{
+        display: inline-block;
+        padding: 20px;
+        &-submit, &-text, &-select{
+            padding: 5px;
+            border-radius: 30px;
+            border: 1px solid $light;
+        }
+    }
+    .submit{
+        @include sub($dark,$light);
+    }
+    &__info{
+        color: $light;
+    }
+    &__link-back{
+        color: $light;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.main{
+    min-height: 100%;
+    background-color: $grey;
+    text-align: center;
+    &__container{
+        display: inline-block;
+    }
+    &__table{
+        border-collapse: collapse;
+    }
+    &__thead{
+        background-color: $dark;
+        color: $light;
+    }
+    &__tbody{
+        background-color: $light;
+    }
+    th, td{
+        padding: 10px;
+        min-width: 200px;
+    }
+
+    /* стили для формы входа администратора*/
+    &__login, &__form-upd{
+        display: inline-block;
+        background-color: $dark;
+        border-radius: 30px;
+        padding: 20px;
+        color: $light;
+        margin-top: 10%;
+        &-text{
+            display: block;
+            padding: 5px;
+            border-radius: 30px;
+            border: 1px solid $light;
+            margin: 5px;
+        }
+        .select-author{
+            min-width: 180px;
+        }
+        .message{
+            color: red;
+        }
+    }
+    &__link-back{
+        background-color: $dark;
+        margin-bottom: 10px;
+        .link{
+            color: $light;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    .submit{
+        @include sub($dark,$light);
+        padding: 5px;
+        border-radius: 30px;
+        border: 1px solid $light;
+        margin: 5px;
+        &:hover{
+            border: 1px solid $dark;
+        }
+    }
+    /* ************************************** */
+}
