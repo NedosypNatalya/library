@@ -26,7 +26,7 @@
         <form method="post" action="../admin/insert.php">
             <input type="hidden" name="h-insert" value="insert">
             <input class="header__insert-submit submit" type="submit" name="insert" value="Добавить новую книгу">
-        </from>
+        </form>
     </div>
     <div class="header__remove">
         <form method="post" action="../admin/admin.php">
